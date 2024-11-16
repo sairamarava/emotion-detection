@@ -5,7 +5,7 @@ document.getElementById("emotion-form").addEventListener("submit", async (e) => 
     const resultElement = document.getElementById("result");
 
     try {
-        const response = await fetch("https://emotion-detection-of1o.onrender.com", {
+        const response = await fetch("https://emotion-detection-of1o.onrender.com/predict", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
